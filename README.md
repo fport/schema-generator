@@ -4,6 +4,9 @@
 
 Schema Generator, JSON verilerinden JSON şemaları oluşturmanızı sağlayan bir UI aracıdır. Bu araç sayesinde, JSON verilerinizi doğru bir şekilde doğrulayacak olan JSON şemalarını hızlı bir şekilde oluşturabilirsiniz.
 
+## Amaç
+E2e test aracı olan Cypress kullanımında API testleri yapabiliyoruz. API testlerinde response'ların type kontrolu için popüler olan **chai-json-schema-ajv** eklentisi kullanıyoruz. Schema Generator ile response json'u schema'ya dönüştüren bir araç olması amaçlanmıştır. 
+
 ## Kullanım
 Schema Generator'ü kullanmak oldukça basittir. Sadece aşağıdaki adımları izlemeniz yeterli:
 
@@ -39,6 +42,6 @@ cy.request('/fruits')
 ```
 Daha detaylı açıklamalar ve kurulum için [buradaki](https://furkans-organization-1.gitbook.io/cypress-notlari/17.-api-response-data-type-kontrolu) dokümantasyonu inceleyebilirsiniz.
 
-
+Ayrıca Cypress ile ilgili  hazırladığım el kitapcığına [buradan](https://furkans-organization-1.gitbook.io) göz atabilirsin
 
 
