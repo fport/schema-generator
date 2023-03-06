@@ -2,25 +2,6 @@ const jsonInput = document.getElementById("json-input");
 const jsonOutput = document.getElementById("json-output");
 const convertBtn = document.getElementById("convert-btn");
 
-function convertJsonToSchema() {
-  const jsonData = JSON.parse(jsonInput.value);
-  const schema = {
-    type: typeof jsonData,
-    properties: {},
-  };
-
-  if (Array.isArray(jsonData)) {
-    schema.type = "array";
-    schema.items = convertJsonToSchema(jsonData[0]);
-  } else if (typeof jsonData === "object") {
-    for (const key in jsonData) {
-      schema.properties[key] = convertJsonToSchema(jsonData[key]);
-    }
-  }
-
-  return schema;
-}
-
 function createJsonSchema(jsonData) {
   let schema = {
     type: "object",
