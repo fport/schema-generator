@@ -10,7 +10,7 @@ Schema Generator'ü kullanmak oldukça basittir. Sadece aşağıdaki adımları 
 * Schema Generator websitesi adresine gidin.
 * JSON verinizi yükleyin.
 * Convert butonuna tıklayarak, JSON verinizden bir şema oluşturun.
-* Oluşturulan şemayı, Kopyala butonu ile kopyalayın.
+* Oluşturulan şemayı, Copy to clipboard butonu ile kopyalayın.
 
 
 ## Şemayı Cypress Testlerinde Kullanımı
